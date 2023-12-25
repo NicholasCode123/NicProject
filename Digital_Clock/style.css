@@ -1,0 +1,90 @@
+*{
+  font-family:"Times New Roman",Times,serif;
+  box-sizing: border-box;
+}
+
+.backg{
+  width:100%;
+  min-height:100vh;
+  background-image:radial-gradient(indigo 55%,midnightblue);
+  display:flex;
+  flex-flow:row nowrap;
+  justify-content:center;
+  align-items:center;
+}
+.blu{
+  width:70%;
+  height:6rem;
+  position:relative;
+}
+.dabox{
+  width:100%;
+  height:6rem;
+  background-color:rgba(255,255,255,0.1);
+  border-radius:10px;
+  display:flex;
+  flex-flow:row nowrap;
+  justify-content:center;
+  align-items: center;
+  position:relative;
+  backdrop-filter:blur(4px);
+  z-index: 1;
+
+
+
+
+}
+.blu::before{
+  content:"";
+  background-color:tomato;
+  position:absolute;
+  top:-1.25rem;
+  left:-1.3rem;
+  width:3.5rem;
+  height:3.5rem;
+  border-radius:50%;
+}
+.blu::after{
+  content:"";
+  width:3rem;
+  height:3rem;
+  border-radius:7px;
+  background-color:purple;
+  position:absolute;
+  bottom:-1.25rem;
+  right:-1.25rem;
+}
+.dabox span{
+  font-size:230%;
+  color:whitesmoke;
+  opacity:0.4;
+  display:inline-block;
+  position:relative;
+  padding:0.2rem;
+
+
+}
+
+
+.dabox .h::after{
+  content:"Hours";
+  position:absolute;
+  bottom:-10px;
+  font-size:0.6rem;
+  left:20%;
+}
+.dabox .m::after{
+  content:"Minutes";
+  position:absolute;
+  bottom:-10px;
+  font-size:0.6rem;
+  left:11.5%;
+}
+.dabox .s::after{
+  content:"Seconds";
+  position:absolute;
+  bottom:-10px;
+  font-size:0.6rem;
+  left:0.4rem;
+
+}
