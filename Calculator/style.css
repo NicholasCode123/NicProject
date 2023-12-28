@@ -1,0 +1,69 @@
+*{
+  font-family:"Times New Roman",Times,serif;
+  box-sizing: border-box;
+}
+
+body{
+  width:100vw;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+
+}
+.out{
+  width:70vw;
+  height:70vh;
+  border:none;
+  background-color:black;
+  position:relative;
+  display:flex;
+  justify-content:center;
+  border-radius:0.5rem;
+
+}
+.sep{
+  width:95%;
+  height:25%;
+  background-color:black;
+  position:absolute;
+  top:0.5rem;
+  border-radius:0.25rem;
+}
+.calc-box{
+  width:95%;
+  height:70%;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  grid-template-rows:repeat(5,1fr);
+  gap:0.25rem;
+  position:absolute;
+  bottom:0.5rem;
+  
+}
+.duanol{
+  grid-column-start:1;
+  grid-column-end:3;
+  border-radius:2rem;
+}
+.ac,.de,.titik{
+  background-color: #9f9f9f;
+}
+.tambah,.per,.kali,.kurang{
+  background-color:orange;
+}
+button{
+  border:none;
+  border-radius:50%;
+  font-size:125%;
+  color:white;
+  background-color: #313131;
+
+}
+.atas{
+  overflow:scroll;
+  font-size:1.5rem;
+  color:white;
+  margin:1rem;
+
+
+}
